@@ -1,0 +1,655 @@
+body{
+    font-family: "FF DIN Pro",sans-serif;
+    overflow-x: hidden;
+}
+a{
+  text-decoration: none !important;
+}
+.topbar{
+    text-align: center;
+    background-color: #232b49 ;
+    height: 36px;
+    color: #fff;
+    padding-top: 5px;
+}
+
+.slider-main div>img{
+    background-position: center;
+    width: 100%;
+    height: auto;
+
+}
+/* TAB CONTENT */
+
+
+
+.tab {
+
+    list-style-type: none;
+    display: block;
+  }
+  
+.tablinks{
+    max-width: 70px;
+    margin: 0 auto;
+    display: flex;
+    margin-bottom: 15px;
+    margin-right: 50px;
+  
+  }
+  .ucgen{
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 9.5px 0 9.5px 16.5px;
+    margin-top: 25px;
+    border-color: transparent transparent transparent #fff;    
+    z-index: 999;
+    position: absolute;
+    margin-left: 180px;
+  }
+
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    display: inline-flex;
+    flex-wrap: wrap;
+
+  }
+
+  .tabcontent img{
+    vertical-align: middle;
+    border-style: none;
+    display: inline-flex;
+    flex-wrap: wrap;
+    float: left;
+  }
+
+  .content-img{
+    vertical-align: middle;
+    border-style: none;
+    display: inline-flex;
+    flex-wrap: wrap;
+    float: left;
+  }
+  
+  .is-container{
+    width: calc(100% - 100px);
+    max-width: 2560px;
+    margin: 0 auto;
+    
+  }
+
+  .flex-card{
+    display: inline-flex;
+    flex-wrap: wrap;
+    width:350px;
+    justify-content: space-between;
+    color: white;
+    background-color:transparent;
+    color: black;
+    margin-bottom: 30px;
+    margin-left: 50px;
+    
+}
+
+.product-name{
+  font-size: 15px;
+  width: 300px;
+  overflow: hidden; 
+  white-space: nowrap; 
+  text-overflow: ellipsis; 
+}
+
+  .flex-card img{
+    width:100px;
+    margin: 0 auto;
+    display: flex;
+    margin-top: 10px !important;
+    margin-bottom: 50px ;
+  }
+
+
+  .price{
+    color:#0e2475;
+  }
+
+  .shop-btn{
+    margin: auto;
+    width: 300px;
+    border-radius: 30px;
+    border: 1px solid #0e2475;
+    color: #0e2475;
+    display: flow-root;
+    text-align: center;
+   
+  }
+
+  .tablinks-name{
+    font-weight: bold;
+    width: 100%;
+    display: none;
+  }
+
+  /* POPUP */
+  .button {
+    font-size: 1em;
+    padding: 10px;
+    color: #fff;
+    border: 2px solid #06D85F;
+    border-radius: 20px/50px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+  }
+  .button:hover {
+    background: #06D85F;
+  }
+  
+  .overlay {
+    position: fixed;
+    top: 200;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    visibility: hidden;
+    opacity: 0;
+  }
+  .overlay:target {
+    visibility: visible;
+    opacity: 1;
+  }
+  
+  .popup {
+    margin-right:20px;
+    padding: 20px;
+    background: rgb(55, 55, 55);
+    color: white;
+    border-radius: 20px;
+    width: 300px;
+    position: relative;
+
+    float: right;
+    height: 80px;
+    margin-bottom: 10px;
+  }
+  
+  .popup-icon{
+    color:#fff;
+    float: left; 
+    font-size: 10px;
+    margin-right: 20px;
+    background-color:#06D85F;
+    padding:10px;
+    margin-top: 8px;
+    border-radius: 100%;
+  }
+
+  .popup .close {
+    position: absolute;
+    top:18px;
+    right: 30px;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #fff;
+  }
+
+  .popup .close:hover {
+    color: #035100;
+  }
+  .popup .content {
+    max-height: 30%;
+  }
+
+  .content-link{
+    color: rgb(27, 129, 212);
+    text-decoration: none;
+    margin-left: 50px;
+    margin-top: -20px;
+    font-size: 13px;
+  }
+  
+  @media screen and (max-width: 700px){
+  
+
+    .popup{
+ 
+    margin-right: 90px;
+    }
+  }
+  
+  /* POPUP END */
+
+
+
+  /* Responsive  */
+ 
+  @media screen and (min-width: 1300px) and (max-width: 1542px) {
+
+    .flex-card{
+      
+      width:180px;
+
+  }
+  
+  .product-name{
+    width: 180px;
+    overflow: hidden; 
+    white-space: nowrap; 
+    text-overflow: ellipsis; 
+  }
+
+  .shop-btn{
+    width: 180px;
+  }
+  .content-img {
+    width: 402px;
+    height: 567px;
+    margin-left: 20px;
+}
+  }
+
+   
+
+
+
+@media screen and (min-width: 1200px) and (max-width: 1333px) {
+
+  .flex-card{
+   
+    width:140px;
+    
+}
+.content-img {
+  margin-left: 30px;
+}
+
+
+.product-name{
+  width: 150px;
+  overflow: hidden; 
+  white-space: nowrap; 
+  text-overflow: ellipsis; 
+}
+
+
+.shop-btn{
+
+  width: 140px;
+ 
+}
+}
+@media screen and (min-width: 1600px) and (max-width: 1859px) {
+
+    .flex-card{
+      width:300px;
+  }
+
+  .product-name{
+    width: 230px;
+    overflow: hidden; 
+    white-space: nowrap; 
+    text-overflow: ellipsis; 
+  }
+
+  .ucgen{
+    margin-left: 100px;
+  }
+}
+@media screen and (min-width: 1710px) and (max-width: 1880px) {
+
+.ucgen{
+  margin-left: 108px;
+}
+}
+
+
+
+@media screen and (min-width: 1500px) and (max-width: 1719px) {
+
+  .flex-card{
+    width:250px;
+}
+
+  .product-name{
+    width: 250px;
+    overflow: hidden; 
+    white-space: nowrap; 
+    text-overflow: ellipsis; 
+  }
+  .shop-btn{
+
+    width: 200px;
+  }
+
+  .ucgen{
+    margin-left: 100px;
+  }
+
+}
+
+
+@media screen and (min-width: 1880px) and (max-width: 2050px) {
+  .flex-card{
+    width:350px;
+}
+
+  .product-name{
+    width: 350px;
+    overflow: hidden; 
+    white-space: nowrap; 
+    text-overflow: ellipsis; 
+  }
+  .shop-btn{
+    width: 300px;
+  }
+  .ucgen{
+    margin-left: 115px;
+  }
+
+}
+
+
+@media screen and (min-width: 1500px) and (max-width: 1640px) {
+  .flex-card{
+    width:230px;
+}
+
+  .product-name{
+    width: 250px;
+    overflow: hidden; 
+    white-space: nowrap; 
+    text-overflow: ellipsis; 
+  }
+  .shop-btn{
+
+    width: 200px;
+  }
+  .ucgen{
+    margin-left: 100px;
+  }
+
+}
+
+
+
+@media screen and (min-width: 1543px) and (max-width: 1660px) {
+
+  .ucgen{
+    margin-left: 90px;
+  }
+
+}
+
+@media screen and (max-width: 1499px) {
+
+  .ucgen{
+    margin-left: 92px;
+  }
+
+}
+
+@media screen and (min-width:1060px) and (max-width: 1200px) {
+  .content-img{
+    display: none;
+  }
+  .flex-card{
+    margin-left:70px;
+    width: 220px;
+  }
+  .shop-btn{
+    width: 250px;
+  }
+  .content-img{
+    display: none;
+  }
+  .ucgen{
+    display: none;
+  }
+  .product-name{
+    width: 250px;
+    overflow: hidden; 
+    white-space: nowrap; 
+    text-overflow: ellipsis; 
+  }
+
+}
+
+@media screen and (min-width:2340px) and (max-width: 2473px) {
+  .ucgen{
+    margin-left: 160px;
+  }
+}
+
+
+@media screen and (min-width:960px) and (max-width: 1060px) {
+  .content-img{
+    display: none;
+  }
+  .flex-card{
+    margin-left:100px;
+    width: 280px;
+  }
+  .shop-btn{
+    width: 260px;
+  }
+  .content-img{
+    display: none;
+  }
+  .ucgen{
+    display: none;
+  }
+  .product-name{
+    width: 300px;
+    overflow: hidden; 
+    white-space: nowrap; 
+    text-overflow: ellipsis; 
+  }
+}
+@media screen and (min-width:769px) and (max-width: 959px) {
+  .content-img{
+    display: none;
+  }
+  .flex-card{
+    margin-left:100px;
+    width: 200px;
+  }
+  .shop-btn{
+    width: 180px;
+  }
+  .content-img{
+    display: none;
+  }
+  .ucgen{
+    display: none;
+  }
+  .product-name{
+    width: 200px;
+    overflow: hidden; 
+    white-space: nowrap; 
+    text-overflow: ellipsis; 
+    display: block;
+  }
+}
+@media screen and (max-width: 770px) {
+
+.content-img{
+  display: none;
+}
+
+.ucgen{
+  display: none;
+}
+
+.tablinks{
+  display: none;
+}
+  .flex-card{
+    width:250px;
+    margin-bottom: 50px ;
+    margin-left: 30px;
+}
+
+.tablinks-name{
+  display: flex;
+  margin-left:10px ;
+}
+.product-name{
+  width: 250px;
+  overflow: hidden; 
+  white-space: nowrap; 
+  text-overflow: ellipsis; 
+}
+
+.flex{
+  display: flex;
+  overflow: scroll;
+}
+.shop-btn{
+  width: 230px;
+}
+}
+
+
+  
+@media screen and (max-width: 665px) {
+  .tablinks{
+    display: none;
+  }
+  .tablinks-name{
+    display: flex ;
+  }
+  .is-container{
+  width: 100%;
+  }
+  .flex-card{
+    width:200px;
+    margin-bottom: 50px ;
+    margin-left: 60px;
+}
+
+.product-name{
+  width: 200px;
+  overflow: hidden; 
+  white-space: nowrap; 
+  text-overflow: ellipsis; 
+}
+
+.shop-btn{
+  width: 170px;
+}
+}
+
+@media screen  and (min-width:425px) and (max-width: 525px){
+  .tablinks{
+    display: none;
+  }
+  .tablinks-name{
+    display: flex ;
+    
+  }
+  .is-container{
+  width: 100%;
+  }
+  .flex-card{
+    width:180px;
+    margin-bottom: 30px ;
+    margin-left:30px;
+}
+
+.product-name{
+  width: 150px;
+  overflow: hidden; 
+  white-space: nowrap; 
+  text-overflow: ellipsis; 
+}
+
+.shop-btn{
+  width: 100px;
+}
+}
+
+
+@media screen and (min-width: 2000px){
+  .ucgen{
+    display:none !important;
+  }
+}
+
+@media screen and (max-width: 525px) {
+  .tablinks{
+    display: none;
+  }
+
+  .is-container{
+  width: 100%;
+  }
+  .flex-card{
+    width:180px;
+    margin-bottom: 50px ;
+    margin-left: 50px;
+}
+
+.product-name{
+  width: 180px;
+  overflow: hidden; 
+  white-space: nowrap; 
+  text-overflow: ellipsis; 
+}
+
+
+
+}
+
+@media screen and (min-width: 1432px) {
+  
+ 
+}
+
+@media screen and (max-width: 460px) {
+ 
+  
+  .flex-card{
+    width:300px;
+    margin-bottom: 50px ;
+    margin-left:50px;
+}
+
+.product-name{
+  width: 300px;
+  overflow: hidden; 
+  white-space: nowrap; 
+  text-overflow: ellipsis; 
+}
+
+.shop-btn{
+  width: 200px;
+}
+
+}
+
+@media screen and (max-width: 340px) {
+ 
+  
+  .flex-card{
+    width:300px;
+    margin-bottom: 50px ;
+    margin-left:30px;
+}
+
+.product-name{
+  width: 300px;
+  overflow: hidden; 
+  white-space: nowrap; 
+  text-overflow: ellipsis; 
+}
+
+.shop-btn{
+  width: 200px;
+}
+.tablinks-name {
+  margin-left: 20px;
+}
+
+}
